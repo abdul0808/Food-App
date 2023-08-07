@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
 
-const mongoURI = 'mongodb+srv://abdul08:gofood@cluster0.g66many.mongodb.net/gofoodmern?retryWrites=true&w=majority'
 mongoose.set('strictQuery', true); //suppresing mongoose warning
 const mongoDB =async() =>{
    await mongoose.connect(mongoURI,{ UseNewUrlParser: true }, async(err,result)=>{ 
